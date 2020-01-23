@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+  background(225);
   rectMode(CORNER);
   fill(206,255,244);
   rect(0, 0, map(hour(), 0, 24, 0, 395), 400);
@@ -23,6 +23,6 @@ function draw() {
   rectMode(CENTER);
   translate(200, 200);
   translate(p5.Vector.fromAngle(map(second(),0,60,0,2*PI), 100));
-  circle(0,0,60);
+  circle(0,0,30);
   translate(0,0);
 }
