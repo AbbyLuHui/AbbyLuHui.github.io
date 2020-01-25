@@ -14,10 +14,10 @@ function draw() {
   line(30, 0, 30, 80);
   triangle(25, 80, 35, 80, 30, 90);
   textSize(32);
-  text('M', 50, 60);
+  text('H', 50, 60);
   line(0, 370, 80, 370);
   triangle(90, 370, 80, 365, 80, 375);
-  text("H", 100, 380);
+  text("M", 100, 380);
 
   fill(map(second(),0,60,0,200));
   rectMode(CENTER);
