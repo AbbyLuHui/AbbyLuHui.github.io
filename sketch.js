@@ -3,21 +3,21 @@ function setup() {
 }
 
 function draw() {
-  background(225);
+  background(235);
   rectMode(CORNER);
   fill(206,255,244);
-  rect(0, 0, map(minute(), 0, 24, 0, 395), 400);
+  rect(0, 0, map(hour(), 0, 24, 0, 395), 400);
   fill(255,169,150);
-  rect(0, 0, 400, map(hour(), 0, 60, 0, 395));
+  rect(0, 0, 400, map(minute(), 0, 60, 0, 395));
   fill(0);
   strokeWeight(5);
   line(30, 0, 30, 80);
   triangle(25, 80, 35, 80, 30, 90);
   textSize(32);
-  text('H', 50, 60);
+  text('M', 50, 60);
   line(0, 370, 80, 370);
   triangle(90, 370, 80, 365, 80, 375);
-  text("M", 100, 380);
+  text("H", 100, 380);
 
   fill(map(second(),0,60,0,200));
   rectMode(CENTER);
